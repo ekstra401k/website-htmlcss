@@ -21,6 +21,7 @@ body {
   color: white;
 }
 
+
 div.logo-space {
   display: grid;
   grid-template-rows: auto 4rem 2rem;
@@ -41,4 +42,19 @@ h2 {
 h3 {
   font-weight: 400;
   align-self: end;
+  animation-name: fade-message;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: both;
+  animation-delay: 2s;
+
+}
+
+@keyframes fade-message {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
 }
