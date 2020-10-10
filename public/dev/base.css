@@ -1,0 +1,354 @@
+body {
+  --ekstra-blue-100: hsla(209, 100%, 59%, 1.0);
+  --ekstra-blue-300: hsla(209, 100%, 37%, 1.0);
+  --ekstra-blue-500: hsla(209, 100%, 15%, 1.0);
+  --ekstra-blue-700: hsla(209, 100%, 2%, 1.0);
+
+  --ekstra-green-100: hsla(128, 27%, 70%, 1.0);
+  --ekstra-green-300: hsla(128, 47%, 53%, 1.0);
+  --ekstra-green-500: hsla(128, 67%, 36%, 1.0);
+  --ekstra-green-700: hsla(128, 100%, 19%, 1.0);
+
+  --ekstra-gray-100: hsla(209, 2%, 98%, 1.0);
+  --ekstra-gray-150: hsla(209, 6%, 98%, 1.0);
+  --ekstra-gray-200: hsla(209, 2%, 96%, 1.0);
+  --ekstra-gray-250: hsla(209, 2%, 84%, 1.0);
+  --ekstra-gray-300: hsla(209, 2%, 72%, 1.0);
+  --ekstra-gray-350: hsla(209, 2%, 64%, 1.0);
+  --ekstra-gray-400: hsla(209, 2%, 54%, 1.0);
+  --ekstra-gray-500: hsla(209, 2%, 42%, 1.0);
+  --ekstra-gray-600: hsla(209, 2%, 21%, 1.0);
+  --ekstra-gray-700: hsla(209, 2%, 11%, 1.0);
+  --ekstra-gray-800: hsla(209, 2%, 5%, 1.0);
+
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 200;
+  font-size: 16pt;
+  background-color: var(--ekstra-gray-100);
+
+}
+
+.content {
+  margin-left: 15vw;
+  margin-right: 15vw;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: 600;
+}
+.banner {
+  object-fit: cover;
+  color: white;
+  padding: 5rem;
+  margin: -1rem -1rem 0rem -1rem;
+  display: grid;
+  grid-auto-flow: row;
+  justify-items: center;
+}
+
+.blue-grad {
+  background: linear-gradient(180deg, var(--ekstra-blue-300) 0%, var(--ekstra-blue-500) 100%);
+}
+.green-grad {
+  background: linear-gradient(180deg, var(--ekstra-green-700) 0%, var(--ekstra-green-300) 100%);
+}
+
+.green-grad > * {
+  margin: 0;
+ 
+}
+
+.display {
+  font-weight: 400;
+  font-size: 1em;
+  margin: 1rem 0 0 0;
+}
+
+h3.display {
+  margin: .25rem 0 0 0;
+  font-weight: 200;
+  font-style: oblique;
+}
+
+.banner > button {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  padding: .5em 1em .5em 1em;
+  line-height:.8em; 
+  height: 2em;
+  width: auto;
+  font-size: 3rem;
+  border-radius: 1rem;
+  margin: 2rem;
+  border: 1px solid var(--ekstra-green);
+  background-color: var(--ekstra-green);
+  background: linear-gradient(180deg, var(--ekstra-green-100) 0%, var(--ekstra-green-700) 100%);
+  color: white;
+  text-shadow: 0em .125em .125em var(--ekstra-green-700);
+  box-shadow: 0em .125em .125em var(--ekstra-blue-500);
+}
+
+.banner.green-grad > button {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  padding: .5em 1em .5em 1em;
+  line-height:.8em; 
+  height: 2em;
+  width: auto;
+  font-size: 3rem;
+  border-radius: 1rem;
+  margin: 4rem 2rem 2rem 2rem;
+  border: 1px solid var(--ekstra-green);
+  background-color: var(--ekstra-green);
+  background: linear-gradient(180deg, var(--ekstra-blue-100) 0%, var(--ekstra-blue-500) 100%);
+  color: white;
+  text-shadow: 0em .125em .125em var(--ekstra-blue-500);
+  box-shadow: 0em .125em .125em var(--ekstra-green-700);
+}
+
+#logo {
+  height: 6rem;
+  width: auto;
+}
+
+.quoted {
+  font-size: 2em;
+  margin: 5rem 0 5rem 0;
+  text-align: center;
+  color: var(--ekstra-gray-400);
+  font-style: oblique;
+  
+}
+
+.quoted:before {
+  content: "\201c";
+}
+
+.quoted:after {
+  content: "\201d";
+}
+
+#key-selling-point {
+  font-size: 2em;
+  margin: 5rem 20vw 5rem 20vw;
+  text-align: center;
+  color: var(--ekstra-green-500);
+}
+
+#secondary-selling-point {
+  font-size: 1.8em;
+  margin: 5rem 5% 5rem 5%;
+  text-align: center;
+  color: var(--ekstra-green-500);
+}
+
+#secondary-selling-point + ul {
+  margin: 5rem -5rem 5rem -5rem;
+  font-size: 1.2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  align-items: top;
+  justify-items: center;
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  font-weight: 400;
+}
+
+#secondary-selling-point + ul > li:before {
+  content:url('assets/checkmark.png');
+  display: block;
+  margin: 1rem 0 1rem 0;
+}
+h4 {
+  font-size: 1.4em;
+  margin: 6rem 0 0rem 0;
+  font-weight: 200;
+  text-align: left;
+  color: var(--ekstra-green-500);
+}
+
+h4 + p {
+  margin: 1rem 10% 4rem 20%;
+  text-align: left;
+}
+
+#comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  align-items: top;
+  justify-items: center;
+  width: 80%;
+  margin: 4rem auto 4rem auto;
+}
+
+#comparison>div {
+  border: 1px solid var(--ekstra-gray-250);
+  border-radius: 1rem;
+  box-shadow: 0 .25rem .5rem 0 var(--ekstra-gray-250);
+  background-color: white;
+}
+
+#comparison h1 {
+  margin: 0;
+  text-align: center;
+  background-color: var(--ekstra-gray-250);
+  background: linear-gradient(180deg, var(--ekstra-gray-250) 0%, var(--ekstra-gray-350) 100%);
+  color: white;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 1rem 0 1rem 0;
+  border-radius: 1rem 1rem 0 0;
+
+}
+
+#comparison div:first-of-type h1 {
+  background-color: var(--ekstra-blue-100);
+  background: linear-gradient(180deg, var(--ekstra-blue-100) 0%, var(--ekstra-blue-300) 100%);
+
+}
+
+#comparison div:last-of-type h1 {
+  background-color: var(--ekstra-green-100);
+  background: linear-gradient(180deg, var(--ekstra-green-100) 0%, var(--ekstra-green-300) 100%);
+}
+
+#comparison ul{
+  margin: 1rem 1rem 2rem 1rem;
+  font-size: .8em;
+}
+#comparison li {
+  padding: .5rem 0 .5rem 0;
+}
+
+#benefits {
+  list-style: none;
+
+}
+
+#benefits li {
+  font-size: 1.4em;
+  margin: 5rem 16vw 5rem 16vw;
+  font-weight: 200;
+  text-align: center;
+  color: var(--ekstra-green-500);
+
+}
+
+.hide {
+  display: none;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* 
+
+p {
+  font-weight: 200;
+}
+
+
+#roles {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  align-items: top;
+  justify-items: center;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+#roles h1 {
+  font-size: .8em;
+}
+
+h1,
+h2 {
+  color: var(--ekstra-blue);
+}
+
+h3 {
+  color: var(--ekstra-green);
+}
+
+div .partner {
+  display: grid;
+  grid-template-columns: 5rem auto;
+  grid-gap: 0;
+  align-items: center;
+  justify-items: center;
+}
+
+
+div.head-banner img {
+  height: 70px;
+  width: auto;
+  margin: 12rem auto 0 0rem;
+  padding: 0;
+}
+
+div.head-banner h2 {
+  margin: 0 auto 0 0rem;
+  color: white;
+  font-weight: 400;
+}
+
+div.head-banner h3 {
+  margin: 0 auto 0 0rem;
+  padding: 0 0 12rem 0;
+  color: white;
+  font-weight: 400;
+
+}
+
+div.content {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 2rem;
+  color: white;
+  padding: 4rem;
+  border-radius: 2rem 2rem 2rem 2rem;
+}
+
+blockquote:before {
+  content: "\201C";
+}
+
+blockquote:after {
+  content: "\201D";
+}
+
+blockquote:nth-of-type(odd) {
+  background-color: #b2ff59;
+  color: var(--ekstra-blue);
+}
+
+blockquote:nth-of-type(even) {
+  background-color: skyblue;
+}
+
+button {
+  letter-spacing: .03em;
+  font-weight: 800;
+  font-size: 2.5rem;
+  padding: .6em 1.2em .6em 1.2em;
+  background-color: var(--ekstra-green);
+  border: none;
+  border-radius: .5em;
+  color: white;
+  box-shadow: 0 .075em .25em black;
+  /* x y blur color */
+
+} */
