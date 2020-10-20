@@ -2,12 +2,16 @@ body {
   --ekstra-blue-100: hsla(209, 100%, 59%, 1.0);
   --ekstra-blue-300: hsla(209, 100%, 37%, 1.0);
   --ekstra-blue-500: hsla(209, 100%, 15%, 1.0);
+  --ekstra-blue-300a: hsla(209, 100%, 37%, 0.45);
+  --ekstra-blue-500a: hsla(209, 100%, 15%, 0.45);
   --ekstra-blue-700: hsla(209, 100%, 2%, 1.0);
 
   --ekstra-green-100: hsla(128, 27%, 70%, 1.0);
   --ekstra-green-300: hsla(128, 47%, 53%, 1.0);
+  --ekstra-green-300a: hsla(128, 47%, 53%, 0.45);
   --ekstra-green-500: hsla(128, 67%, 36%, 1.0);
   --ekstra-green-700: hsla(128, 100%, 19%, 1.0);
+  --ekstra-green-700a: hsla(128, 100%, 19%, 0.45);
 
   --ekstra-gray-100: hsla(209, 2%, 98%, 1.0);
   --ekstra-gray-150: hsla(209, 6%, 98%, 1.0);
@@ -47,10 +51,12 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .blue-grad {
-  background: linear-gradient(180deg, var(--ekstra-blue-300) 0%, var(--ekstra-blue-500) 100%);
+  background: linear-gradient(180deg, var(--ekstra-blue-300a) 0%, var(--ekstra-blue-500a) 100%),
+  url(assets/ranier-a.jpg) 50% 20%;
 }
 .green-grad {
-  background: linear-gradient(180deg, var(--ekstra-green-700) 0%, var(--ekstra-green-300) 100%);
+  background: linear-gradient(180deg, var(--ekstra-green-700a) 0%, var(--ekstra-green-300a) 100%),
+  url(assets/runner-a.jpg) 50% 20%;
 }
 
 .green-grad > * {
@@ -86,7 +92,9 @@ h3.display {
   color: white;
   text-shadow: 0em .125em .125em var(--ekstra-green-700);
   box-shadow: 0em .125em .125em var(--ekstra-blue-500);
+
 }
+
 
 .banner.green-grad > button {
   font-family: "Fira Sans", sans-serif;
@@ -105,6 +113,19 @@ h3.display {
   text-shadow: 0em .125em .125em var(--ekstra-blue-500);
   box-shadow: 0em .125em .125em var(--ekstra-green-700);
 }
+
+.banner.blue-grad > button:hover {
+  box-shadow: 0em .075em .125em inset, 0em .125em .25em;
+  background: linear-gradient(180deg, var(--ekstra-green-300) 0%, var(--ekstra-green-500) 100%);
+  text-shadow: 0em 0em 0em ;
+}
+
+.banner.green-grad > button:hover {
+  box-shadow: 0em .075em .125em inset, 0em .125em .25em;
+  background: linear-gradient(180deg, var(--ekstra-blue-300) 0%, var(--ekstra-blue-500) 100%);
+  text-shadow: 0em 0em 0em ;
+}
+
 
 #logo {
   height: 6rem;
