@@ -63,11 +63,13 @@ h1,h2,h3,h4,h5,h6 {
 .blue-grad {
   background: linear-gradient(180deg, var(--ekstra-blue-300a) 0%, var(--ekstra-blue-500a) 100%),
   url(assets/ranier-a.jpg) 50% 20%;
+  background-size: 120%;
 }
 .green-grad {
   background: linear-gradient(180deg, var(--ekstra-green-700a) 0%, var(--ekstra-green-300a) 100%),
   url(assets/runner-a.jpg) 50% 20%;
-}
+/*  background-size: 120%;
+*/}
 
 .green-grad > * {
   margin: 0;
