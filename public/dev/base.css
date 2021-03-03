@@ -227,7 +227,6 @@ h4 + p {
   width: clamp(66%, 76ch, 80vw);
 
   margin: 4rem auto 4rem auto;
-  font-size: clamp(1em, 1.5em, 2em);
 }
 
 #comparison>div {
@@ -296,6 +295,8 @@ strong {
 @media (max-width: 980px) {
   #comparison {
     grid-template-columns: repeat(1, 1fr);
+      font-size: clamp(1em, 1.5em, 2em);
+
   }
 
 #secondary-selling-point + ul {
@@ -316,6 +317,8 @@ width: clamp(20%, 12ch, 80vw);
 @media (min-width: 981px) {
   #comparison {
     grid-template-columns: repeat(3, 1fr);
+    font-size: clamp(1em, 1.25em, 1.5em);
+
   }
 #secondary-selling-point + ul {
   grid-template-columns: repeat(4, 1fr);
