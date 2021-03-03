@@ -50,21 +50,21 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 600;
 }
 .banner {
-  object-fit: cover;
+  object-fit: fill;
   color: white;
   padding: 2rem;
   margin: -1rem -1rem 0rem -1rem;
   display: grid;
   grid-auto-flow: row;
   justify-items: center;
-  width: 100vw + 4rem;
+  width: 100vw;
 }
 
 .blue-grad {
   background: linear-gradient(180deg, var(--ekstra-blue-300a) 0%, var(--ekstra-blue-500a) 100%),
   url(assets/ranier-a.jpg) 50% 20%;
-  background-size: 120%;
-}
+/*  background-size: 120%;
+*/}
 .green-grad {
   background: linear-gradient(180deg, var(--ekstra-green-700a) 0%, var(--ekstra-green-300a) 100%),
   url(assets/runner-a.jpg) 50% 20%;
