@@ -57,7 +57,7 @@ h1,h2,h3,h4,h5,h6 {
   display: grid;
   grid-auto-flow: row;
   justify-items: center;
-  width: 100vw + 2rem;
+  width: 100vw;
 }
 
 .blue-grad {
