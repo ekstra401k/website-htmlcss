@@ -336,8 +336,9 @@ width: clamp(20%, 12ch, 80vw);
   position:  fixed;
   left: 0px;
   top:  0px;
-/*  text-align:  center;
-*/  box-shadow:  0px 0px 6px 0px black;
+  border-bottom: 1em;
+/*  text-align:  center; */
+  box-shadow:  0px 0px 6px 0px black;
 
 }
 
