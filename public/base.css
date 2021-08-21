@@ -347,6 +347,7 @@ width: clamp(20%, 12ch, 80vw);
   margin-left: auto;
   margin-right: auto;
   text-align:  center;
+   background: pink;
  }
 
  .alert > p:before {
