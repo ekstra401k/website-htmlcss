@@ -359,7 +359,7 @@ width: clamp(20%, 12ch, 80vw);
   background-repeat: no-repeat;
   display: inline-block;
   position: relative;
-  /* top:  .5em; */
+  top:  .5em;
 
 
   content:  '';
