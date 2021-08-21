@@ -344,10 +344,10 @@ width: clamp(20%, 12ch, 80vw);
 
  .alert > p {
   width:  70%;
+   margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
   text-align:  center;
-   background: pink;
  }
 
  .alert > p:before {
