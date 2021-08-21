@@ -52,13 +52,13 @@ h1,h2,h3,h4,h5,h6 {
 .banner {
   object-fit: fill;
   color: white;
-  padding: 1.5em 2em 2em 2em;
+  padding: 2em;
   margin: -1rem -1rem 0rem -1rem;
   display: grid;
   grid-auto-flow: row;
   justify-items: center;
   width: 100vw;
-  margin-top:  72px;
+  margin-top:  84px;
 }
 
 .blue-grad {
@@ -352,7 +352,7 @@ width: clamp(20%, 12ch, 80vw);
  .notice > p:before {
   padding-right:  1em;
   opacity:  90%;
-  height:  2em;
+  height:  1.5em;
   width: 2em;
   background-image:  url("./assets/icons-gift.png");
   background-size: 2em 2em;
