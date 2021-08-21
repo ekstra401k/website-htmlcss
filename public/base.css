@@ -327,7 +327,7 @@ width: clamp(20%, 12ch, 80vw);
 }
 }
 
-.notice {
+.alert {
   width:  100%;
   padding:  12px;
   font-weight:  500;
