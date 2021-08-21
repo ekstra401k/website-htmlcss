@@ -342,24 +342,24 @@ width: clamp(20%, 12ch, 80vw);
 }
 
 
- .notice > p {
+ .alert > p {
   width:  70%;
   margin-left: auto;
   margin-right: auto;
   text-align:  center;
  }
 
- .notice > p:before {
+ .alert > p:before {
   padding-right:  1em;
   opacity:  90%;
-  height:  1.5em;
+  height:  2em;
   width: 2em;
   background-image:  url("./assets/icons-gift.png");
   background-size: 2em 2em;
   background-repeat: no-repeat;
   display: inline-block;
   position: relative;
-  top:  .5em;
+  /* top:  .5em; */
 
 
   content:  '';
