@@ -366,6 +366,11 @@ width: clamp(20%, 12ch, 80vw);
 
   content:  '';
  }
+
+ .special-deal a {
+   font-weight: 600;
+   color: white;
+ }
 /*
 
 p {
