@@ -58,7 +58,7 @@ h1,h2,h3,h4,h5,h6 {
   grid-auto-flow: row;
   justify-items: center;
   width: 100vw;
-  margin-top:  72px;
+/*  margin-top:  72px; */
 }
 
 .blue-grad {
