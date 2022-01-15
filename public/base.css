@@ -371,6 +371,32 @@ width: clamp(20%, 12ch, 80vw);
    font-weight: 600;
    color: white;
  }
+section.partners {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+}
+div.partner {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2rem;
+    justify-content: left;
+    align-content: center;
+}
+div.partner > p {
+}
+
+div.partner > img {
+    width: 160px;
+    align-self: center;
+}
+
+
+
+
 /*
 
 p {
@@ -400,14 +426,6 @@ h2 {
 
 h3 {
   color: var(--ekstra-green);
-}
-
-div .partner {
-  display: grid;
-  grid-template-columns: 5rem auto;
-  grid-gap: 0;
-  align-items: center;
-  justify-items: center;
 }
 
 
